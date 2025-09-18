@@ -1,11 +1,11 @@
-import SobreMi from "./components/Sobre-Mi"
-import Header  from "./components/Encabezado"
+import Inicio from "./components/inicio/Inicio"
+import Header  from "./components/encabezado/Encabezado"
 function App() {
 
   return (
     <>
       <Header />
-      <SobreMi />
+      <Inicio />
     </>
   )
 }
