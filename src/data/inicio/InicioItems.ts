@@ -1,13 +1,5 @@
-export type ItemType = "h1" | "h2" | "img";
-export type ColType = "left" | "right";
 import firma from "../../assets/firmaMia.png"
-export interface Item {
-  type: ItemType;
-  content: string;
-  className?: string;
-  col: ColType;
-}
-
+import type { Item } from "../../interfaces/inicio/inicio";
 export const inicioItems: Item[] = [
   {
     type: "h1",

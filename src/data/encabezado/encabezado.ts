@@ -1,8 +1,5 @@
 import { FaUser, FaProjectDiagram, FaCode, FaHandshake, FaEnvelope } from "react-icons/fa";
-
-export interface HeaderItem {
-  icon: React.ElementType;
-}
+import type {HeaderItem}  from "../../interfaces/encabezado/Encabezado";
 
 export const headerItems: HeaderItem[] = [
   { icon: FaUser },
