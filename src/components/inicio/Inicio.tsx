@@ -1,5 +1,6 @@
 import type { JSX } from "react";
-import { inicioItems, type Item } from "../../data/inicio/InicioItems";
+import { inicioItems} from "../../data/inicio/InicioItems";
+import type {Item } from "../../interfaces/inicio/inicio"
 import VantaBackground from "../birds/Birds";
 
 const Inicio = (): JSX.Element => {
