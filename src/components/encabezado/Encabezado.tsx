@@ -4,9 +4,9 @@ import { headerItems, type HeaderItem } from "../../data/encabezado/encabezado";
 const Header = (): JSX.Element => {
   return (
     <div className="flex items-center justify-center">
-      <div className="sticky flex items-center justify-around space-x-4 m-10 p-3 rounded-full bg-purple-500 
-                      w-lg opacity-50 scale-90 transition-all duration-500 ease-in-out 
-                      hover:opacity-100 hover:scale-100 hover:bg-purple-700">
+      <div className="z-50 fixed top-8 flex items-center justify-around space-x-4 p-3 rounded-full bg-purple-500 
+                      w-3xs opacity-50 scale-90 transition-all duration-500 ease-in-out 
+                      hover:opacity-100 hover:scale-100 hover:bg-purple-700 hover:w-md">
         {headerItems.map(({ icon: Icon }: HeaderItem, index: number) => (
           <Icon
             key={index}
