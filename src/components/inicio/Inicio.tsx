@@ -53,7 +53,7 @@ const Inicio = (): JSX.Element => {
                   alt="Imagen portada"
                   className={item.className}
                 />
-                <h2 className="text-3xl">Revisa mi CV</h2>
+                <h2 className="text-3xl  [text-shadow:4px_4px_5px_rgba(207,207,207,0.6)]">Revisa mi CV</h2>
                 <DescargarPDFBoton />
               </div>
             ))}

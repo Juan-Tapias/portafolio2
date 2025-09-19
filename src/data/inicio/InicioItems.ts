@@ -11,13 +11,13 @@ export const inicioItems: Item[] = [
   {
     type: "h2",
     content: "“Desarrollando con café, pasión y buenas vibras”",
-    className: " ml-20 text-xl",
+    className: " ml-20 text-xl [text-shadow:4px_4px_7px_rgba(207,207,207,1)]",
     col: "left",
   },
   {
     type: "img",
     content: firma,
-    className: "w-100 h-60 ml-35 mt-[-2.5vw] drop-shadow-[0_0_4px_rgba(255,255,255,0.8)]",
+    className: "w-100 h-60 ml-35 mt-[-2.5vw] drop-shadow-[0_0_4px_rgba(255,255,255,1)]",
     col: "left",
   },
   {
