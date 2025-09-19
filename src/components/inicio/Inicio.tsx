@@ -2,7 +2,7 @@ import type { JSX } from "react";
 import { inicioItems} from "../../data/inicio/InicioItems";
 import type {Item } from "../../interfaces/inicio/inicio"
 import VantaBackground from "../birds/Birds";
-
+import DescargarPDFBoton from "../boton/Boton";
 const Inicio = (): JSX.Element => {
   return (
     <div className="relative w-full h-screen">
@@ -43,20 +43,18 @@ const Inicio = (): JSX.Element => {
             })}
         </div>
 
-        <div className="flex justify-center mt-30">
+        <div className="flex justify-center items-center mt-28">
           {inicioItems
             .filter((item) => item.col === "right")
             .map((item: Item, index: number) => (
-              <div key={index} className="object-cover rounded-full">
+              <div key={index} className="flex flex-col justify-center items-center gap-5 object-cover rounded-full">
                 <img
                   src={item.content}
                   alt="Imagen portada"
                   className={item.className}
                 />
-                <h2 className="mt-5 ml-22 text-3xl">Revisa mi CV</h2>
-                <button className="mt-4 ml-28 text-md border w-30 h-8 ">
-                  Descargar
-                </button>
+                <h2 className="text-3xl">Revisa mi CV</h2>
+                <DescargarPDFBoton />
               </div>
             ))}
         </div>

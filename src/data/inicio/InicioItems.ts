@@ -24,7 +24,7 @@ export const inicioItems: Item[] = [
     type: "img",
     content: "https://img.freepik.com/fotos-premium/gato-negro-gafas-sol-gato-negro-gafas-sol_732812-1122.jpg",
     className:
-      "w-87 h-95 mr-20 rounded-full shadow-lg transition-transform duration-500 hover:scale-105 drop-shadow-[0_0_30px_rgba(255,255,255,0.1)]",
+      "flex flex-col w-87 h-95 rounded-full shadow-lg transition-transform duration-500 hover:scale-105 drop-shadow-[0_0_30px_rgba(255,255,255,0.1)]",
     col: "right",
   }
 ];
