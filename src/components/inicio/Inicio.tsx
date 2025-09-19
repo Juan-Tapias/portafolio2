@@ -47,7 +47,7 @@ const Inicio = (): JSX.Element => {
           {inicioItems
             .filter((item) => item.col === "right")
             .map((item: Item, index: number) => (
-              <div key={index} className="flex flex-col justify-center items-center gap-5 object-cover rounded-full">
+              <div key={index} className="flex flex-col justify-center items-center gap-5 object-cover rounded-full ">
                 <img
                   src={item.content}
                   alt="Imagen portada"

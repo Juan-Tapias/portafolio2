@@ -1,8 +1,7 @@
-import pdf from "../../../public/Hoja-De-Vida.pdf"
 
 function DescargarPDFBoton(){
     return (
-        <a href={pdf}>
+        <a href="../../../public/Hoja-De-Vida.pdf" target="_blank" >
             <button className="border w-30 h-10 rounded-3xl 
              shadow-[0_0_10px_rgba(128,0,128,0.7)]
              transition-all duration-300 ease-in-out

@@ -15,9 +15,10 @@ const VantaBirds: React.FC = () => {
             backgroundColor: 0x0a0a0a, 
             color1: 0x6a0dad,           
             color2: 0x6a0dad,    
-            wingSpan: 20.0,
-            speedLimit: 4.0,
+            wingSpan: 5.0,
+            speedLimit: 5.0,
             separation: 50.0,
+            quantity: 4.0
         })
       );
     }

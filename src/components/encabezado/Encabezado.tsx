@@ -6,7 +6,7 @@ const Header = (): JSX.Element => {
   return (
     <div className="flex items-center justify-center">
       <div className="z-50 fixed top-8 flex items-center justify-around space-x-4 p-3 rounded-full bg-gray-300 
-                      w-3xs opacity-50 scale-90 transition-all duration-500 ease-in-out 
+                      w-3xs opacity-50 scale-90 transition-all duration-500 ease-in-out shadow-[0_0_20px_rgba(186,85,211,1)] 
                       hover:opacity-100 hover:scale-100 hover:bg-gray-100 hover:w-md">
         {headerItems.map(({ icon: Icon }: HeaderItem, index: number) => (
           <Icon
