@@ -1,9 +1,4 @@
-@import "tailwindcss";
-
-body {
-  background-color: #242222;
-}
-
+/* Asegura que todas las capas de Swiper sean transparentes */
 .swiper {
   background-color: transparent !important;
 }
@@ -15,3 +10,4 @@ body {
 .swiper-slide {
   background-color: transparent !important;
 }
+ 
