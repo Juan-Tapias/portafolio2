@@ -25,7 +25,7 @@ const ParticlesBackground = () => {
   const options: ISourceOptions = useMemo(
     () => ({
       background: {
-        color: { value: "#000000" },
+        color: { value: "transparent" },
       },
       fpsLimit: 120,
       interactivity: {
