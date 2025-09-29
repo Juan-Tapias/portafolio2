@@ -14,7 +14,7 @@ const Slider: React.FC<SliderProps> = ({ imagenes }) => {
   const swiperRef = useRef<SwiperCore | null>(null);
 
   return (
-    <div className="w-lg max-w-5xl mt-2">
+    <div className="w-lg max-w-5xl mt-2 aspect-[16/9]">
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         modules={[Autoplay, Pagination, Navigation, EffectFade]}
@@ -32,7 +32,7 @@ const Slider: React.FC<SliderProps> = ({ imagenes }) => {
             <img
               src={img}
               alt={`slide-${index}`}
-              className="w-full h-64 sm:h-96 md:h-[500px] object-cover transition-transform duration-500 hover:scale-105"
+              className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
             />
           </SwiperSlide>
         ))}
