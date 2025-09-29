@@ -38,12 +38,12 @@ export const SobreMiData: ItemSobremi[] = [
   },
   {
     type: "h2",
-    content: "Más allá del código",
+    content: "Motivación",
     className: "text-xl [text-shadow:4px_4px_8px_rgba(207,207,207,0.6)]"
   },
   {
     type: "p",
-    content: "Cuando no programo, juego ping pong o aprendo algo nuevo.",
+    content: "Creo y trabajo con pasión, pensando en inspirar a quienes más quiero.",
     className: "text-white"
   }
 ]
