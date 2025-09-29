@@ -13,21 +13,35 @@ const SobreMi = () => {
       <h1 className="text-white text-5xl font-bold mb-8 text-center [text-shadow:4px_4px_7px_rgba(207,207,207,0.3)]">
         Conóceme un poco
       </h1>
-      <div className="flex justify-evenly border-1">
+      <div className="flex justify-evenly flex items-center justify-items-center">
           <Slider imagenes={mockImagenes} />
-            <p className="text-white border-1 w-[30vw] mr-16.5 h-lg">
+          <div className="text-white w-[40vw] h-[22vw] flex flex-col items-center justify-center text-center bg-[#111827] rounded-xl">
+              <p className="text-white ">
+              <h2 className="text-3xl [text-shadow:4px_4px_5px_rgba(207,207,207,0.6)]">Sobre mi</h2>
+              <br />
               Soy Juan Sebastian Martinez Tapias, Algunos me conocen por mi nombre, otros por mis proyectos.
               Trabajo con React, Java y Python, construyendo ideas que pasen de un boceto a un producto real.
               Cuando no estoy frente a la pantalla, probablemente estoy con una raqueta de ping pong en la mano.
             </p>
+          </div>
       </div>
-      <div className="flex items-center justify-evenly border mx-auto w-6xl">
-        <div className="text-white border h-[32vh] w-[14vw] mt-5">Aprendizajes <br />
-Siempre estoy probando, fallando y volviendo a intentar. Así es como crezco.</div>
-        <div className="text-white border h-[32vh] w-[14vw] mt-5">Retos <br />
-Me gustan los proyectos que parecen imposibles al inicio, ahí es donde más aprendo.</div>
-        <div className="text-white border h-[32vh] w-[14vw] mt-5">Más allá del código <br />
-Cuando no estoy programando, probablemente estoy jugando ping pong o buscando algo nuevo que aprender.</div>
+      <div className="flex items-center justify-evenly mx-auto w-6xl">
+        <div className="text-white rounded-xl h-[32vh] w-[14vw] mt-5 flex flex-col items-center justify-center text-center 56 bg-[#100525] ">
+          <h2 className="text-xl [text-shadow:4px_4px_8px_rgba(207,207,207,0.6)]">Aprendizajes</h2>
+          <br />
+             <p>
+              Siempre pruebo, fallo y vuelvo a intentar. Así es como crezco.
+            </p>
+          </div>
+        <div className="text-white rounded-xl h-[32vh] w-[14vw] mt-5 flex flex-col items-center justify-center text-center 56 bg-[#100525] ">
+          <h2 className="text-xl [text-shadow:4px_4px_8px_rgba(207,207,207,0.6)]">Retos</h2>
+          <br />
+          Me gustan los proyectos que parecen imposibles, ahí aprendo más.</div>
+        <div className="text-white rounded-xl h-[32vh] w-[14vw] mt-5 flex flex-col items-center justify-center text-center 56 bg-[#100525] ">
+          <h2 className="text-xl [text-shadow:4px_4px_8px_rgba(207,207,207,0.6)]">Más allá del código</h2> 
+          <br />
+          Cuando no programo, juego ping pong o aprendo algo nuevo.
+        </div>
       </div>
     <ParticlesBackground/>
     </section>

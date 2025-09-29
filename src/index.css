@@ -22,12 +22,10 @@ body {
 }
 .swiper-pagination-bullet {
   background: #000 !important; 
-  opacity: 0.2;
 }
 
 .swiper-pagination-bullet-active {
   background: #000000 !important;
-  opacity: 1;
 }
 .swiper {
   width: 30vw;
