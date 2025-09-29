@@ -16,9 +16,9 @@ const SobreMiSection = () => {
         </h1>
       ))}
 
-      <div className="flex justify-evenly items-center border">
+      <div className="flex justify-evenly items-center">
         <Slider imagenes={mockImagenes} />
-        <div className="text-white w-[40vw] h-[25vw] flex flex-col items-center justify-center text-center bg-[#111827] rounded-xl">
+        <div className="text-white w-[40vw] h-[22vw] flex flex-col items-center justify-center text-center bg-[#1118279f] rounded-xl hover:bg-[#111827] transition-transform duration-300 ease-in-out hover:scale-105 hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.5)]">
           {SobreMiData.slice(1, 3).map((item, index) => {
             if (item.type === "h2") return <h2 key={index} className={item.className}>{item.content}</h2>;
             if (item.type === "p") return <p key={index} className={item.className}>{item.content}</p>;
@@ -28,7 +28,7 @@ const SobreMiSection = () => {
 
       <div className="flex items-center justify-evenly mx-auto w-6xl">
         {[3, 5, 7].map((startIndex, i) => (
-          <div key={i} className="text-white rounded-xl h-[32vh] w-[14vw] mt-5 flex flex-col items-center justify-center text-center bg-[#100525]">
+          <div key={i} className="text-white rounded-xl h-[32vh] w-[14vw] mt-5 flex flex-col items-center justify-center text-center bg-[#10052596] hover:bg-[#100525] transition-transform duration-300 ease-in-out hover:scale-105 hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.5)]">
             <h2 className={SobreMiData[startIndex].className}>{SobreMiData[startIndex].content}</h2>
             <p className="mt-2">{SobreMiData[startIndex + 1].content}</p>
           </div>

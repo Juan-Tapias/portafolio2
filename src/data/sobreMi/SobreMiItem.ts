@@ -8,7 +8,7 @@ export const SobreMiData: ItemSobremi[] = [
   },
   {
     type: "h2",
-    content: "Sobre mi",
+    content: "Sobre mí",
     className: "text-3xl [text-shadow:4px_4px_5px_rgba(207,207,207,0.6)] mb-4"
   },
   {
