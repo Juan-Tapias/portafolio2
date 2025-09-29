@@ -3,34 +3,3 @@
 body {
   background-color: #0A0A0A;
 }
-
-.swiper {
-  background-color: transparent !important;
-}
-
-.swiper-wrapper {
-  background-color: transparent !important;
-}
-
-.swiper-slide {
-  background-color: transparent !important;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  color: #000000 !important;
-}
-.swiper-pagination-bullet {
-  background: #000 !important; 
-}
-
-.swiper-pagination-bullet-active {
-  background: #000000 !important;
-}
-.swiper {
-  width: 30vw;
-  height: 325px;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}

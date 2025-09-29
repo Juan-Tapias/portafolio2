@@ -1,13 +1,30 @@
-/* Asegura que todas las capas de Swiper sean transparentes */
-.swiper {
+/* Slider.module.css */
+.sliderContainer :global(.swiper) {
+  background-color: transparent !important;
+  width: 30vw;
+  height: 325px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.sliderContainer :global(.swiper-wrapper) {
   background-color: transparent !important;
 }
 
-.swiper-wrapper {
+.sliderContainer :global(.swiper-slide) {
   background-color: transparent !important;
 }
 
-.swiper-slide {
-  background-color: transparent !important;
+.sliderContainer :global(.swiper-button-prev),
+.sliderContainer :global(.swiper-button-next) {
+  color: #000000 !important;
 }
- 
+
+.sliderContainer :global(.swiper-pagination-bullet) {
+  background: #000 !important; 
+}
+
+.sliderContainer :global(.swiper-pagination-bullet-active) {
+  background: #000000 !important;
+}

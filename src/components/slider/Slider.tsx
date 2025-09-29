@@ -2,19 +2,21 @@ import React, { useRef } from "react";
 import { type SliderProps } from "../../interfaces/slider/SliderProps";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay, EffectFade } from "swiper/modules";
+import styles from "./Slider.module.css";
 import SwiperCore from "swiper";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
+
 import "./Slider.module.css";
 
 const Slider: React.FC<SliderProps> = ({ imagenes }) => {
   const swiperRef = useRef<SwiperCore | null>(null);
 
   return (
-    <div className="w-lg max-w-5xl mt-2 aspect-[16/9]">
+    <div className={`${styles.sliderContainer} w-lg max-w-5xl mt-2 aspect-[16/9]`}>
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         modules={[Autoplay, Pagination, Navigation, EffectFade]}

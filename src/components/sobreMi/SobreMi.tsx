@@ -4,6 +4,7 @@ import foto1 from '../../assets/gato1.jpg'
 import foto2 from '../../assets/foto1.jpeg'
 import foto3 from '../../assets/foto2.jpeg'
 import foto4 from '../../assets/foto3.jpeg'
+
 import { SobreMiData } from "../../data/sobreMi/SobreMiItem";
 
 const SobreMiSection = () => {
@@ -16,7 +17,7 @@ const SobreMiSection = () => {
         </h1>
       ))}
 
-      <div className="flex justify-evenly items-center">
+      <div className="my-slider flex justify-evenly items-center">
         <Slider imagenes={mockImagenes} />
         <div className="text-white w-[40vw] h-[22vw] flex flex-col items-center justify-center text-center bg-[#1118279f] rounded-xl hover:bg-[#111827] transition-transform duration-300 ease-in-out hover:scale-105 hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.5)]">
           {SobreMiData.slice(1, 3).map((item, index) => {
