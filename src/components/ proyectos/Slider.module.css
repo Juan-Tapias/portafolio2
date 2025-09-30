@@ -1,0 +1,21 @@
+
+.sliderContainer2 :global(.swiper-wrapper) {
+  background-color: transparent !important;
+}
+
+.sliderContainer2 :global(.swiper-slide) {
+  background-color: transparent !important;
+}
+
+.sliderContainer2 :global(.swiper-button-prev),
+.sliderContainer2 :global(.swiper-button-next) {
+  color: #000000 !important;
+}
+
+.sliderContainer2 :global(.swiper-pagination-bullet) {
+  background: #000 !important; 
+}
+
+.sliderContainer2 :global(.swiper-pagination-bullet-active) {
+  background: #000000 !important;
+}

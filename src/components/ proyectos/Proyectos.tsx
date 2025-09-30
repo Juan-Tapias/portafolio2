@@ -12,6 +12,6 @@ export const ProyectosSection = () => {
     { image: foto4, title: "Proyecto 4", description: "Descripción del proyecto 4" },
     ];
     return(
-         <ProjectCarousel projects={projects} />
+        <ProjectCarousel projects={projects} />
     )
 }
