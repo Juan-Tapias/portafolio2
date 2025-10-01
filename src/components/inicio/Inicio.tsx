@@ -3,6 +3,7 @@ import { inicioItems} from "../../data/inicio/InicioItems";
 import type {Item } from "../../interfaces/inicio/inicio"
 import VantaBackground from "../birds/Birds";
 import DescargarPDFBoton from "../boton/Boton";
+
 const Inicio = (): JSX.Element => {
   return (
     <div className="relative w-full h-screen">

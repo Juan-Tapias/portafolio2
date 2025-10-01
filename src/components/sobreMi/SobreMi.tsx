@@ -1,6 +1,5 @@
 import ParticlesBackground from "../particulas/Particulas";
 import Slider from '../slider/Slider'
-import foto1 from '../../assets/gato1.jpg'
 import foto2 from '../../assets/foto1.jpeg'
 import foto3 from '../../assets/foto2.jpeg'
 import foto4 from '../../assets/foto3.jpeg'
@@ -8,7 +7,7 @@ import foto4 from '../../assets/foto3.jpeg'
 import { SobreMiData } from "../../data/sobreMi/SobreMiItem";
 
 const SobreMiSection = () => {
-  const mockImagenes = [foto1, foto2, foto3, foto4];
+  const mockImagenes = [foto2, foto3, foto4];
   return (
     <section className="relative w-full h-screen">
       {SobreMiData.slice(0, 1).map((item, index) => (

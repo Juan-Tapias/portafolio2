@@ -6,10 +6,11 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
-interface Project {
+export interface Project {
   image: string;
   title: string;
   description: string;
+  link: string;
 }
 
 interface ProjectCarouselProps {
@@ -21,9 +22,9 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="flex justify-center h-screen items-center flex-col">
+    <div className="flex justify-center h-screen items-center flex-col drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]">
       <h2 className="text-5xl text-white [text-shadow:4px_4px_5px_rgba(207,207,207,0.6)] mb-4">Proyectos</h2>
-      <div className={`${styles.sliderContainer2} relative w-[950px] h-[550px] bg-gray-900`}>  
+      <div className={`${styles.sliderContainer2} relative w-[950px] h-[550px] bg-gray-900 mt-10`}>  
         <Swiper
           modules={[Navigation, EffectFade]}
           onSwiper={(swiper) => (mainSwiperRef.current = swiper)}
@@ -41,9 +42,19 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
                   alt={project.title}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute bottom-24 left-12 text-white bg-black/40 p-4 rounded-lg max-w-lg z-20">
+                <div className="absolute bottom-24 left-12 text-white bg-black/60 p-4 rounded-lg max-w-lg z-20">
                   <h2 className="text-2xl font-bold">{project.title}</h2>
                   <p className="mt-2 text-sm">{project.description}</p>
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block mt-4 px-4 py-2 bg-[#2C2C2C] hover:bg-blue-700 rounded-lg text-white text-sm font-semibold transition-colors"
+                    >
+                      Ver Proyecto
+                    </a>
+                  )}
                 </div>
               </div>
             </SwiperSlide>
@@ -55,7 +66,7 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
             <div
               key={idx}
               className={`
-                          flex flex-shrink w-50 h-14 rounded-lg overflow-hidden cursor-pointer
+                          flex flex-shrink w-12 h-10 rounded-lg overflow-hidden cursor-pointer
                           transition-all duration-700 ease-in-out
                           ${activeIndex === idx 
                             ? "scale-105 brightness-100 blur-[0px] opacity-100"
