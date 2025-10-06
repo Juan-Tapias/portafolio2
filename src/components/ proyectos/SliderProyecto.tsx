@@ -24,23 +24,23 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
   return (
     <div className="flex justify-center h-screen items-center flex-col drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]">
       <h2 className="text-5xl text-white [text-shadow:4px_4px_5px_rgba(207,207,207,0.6)] mb-4">Proyectos</h2>
-      <div className={`${styles.sliderContainer2} relative w-[950px] h-[550px] bg-gray-900 mt-10`}>  
+      <div className={`${styles.sliderContainer2} rounded-3xl relative w-[950px] h-[550px] bg-gray-900 mt-10`}>  
         <Swiper
           modules={[Navigation, EffectFade]}
           onSwiper={(swiper) => (mainSwiperRef.current = swiper)}
           navigation
           effect="fade"
           loop
-          className="w-full h-full"
+          className="w-full h-full rounded-3xl"
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
         >
           {projects.map((project, idx) => (
             <SwiperSlide key={idx}>
-              <div className="w-full h-full relative">
+              <div className="w-full h-full relative rounded-3xl">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded-3xl"
                 />
                 <div className="absolute bottom-24 left-12 text-white bg-black/60 p-4 rounded-lg max-w-lg z-20">
                   <h2 className="text-2xl font-bold">{project.title}</h2>

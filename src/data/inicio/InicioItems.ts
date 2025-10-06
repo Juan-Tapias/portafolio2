@@ -1,4 +1,4 @@
-import firma from "../../assets/firmaMia.png"
+import firma from "../../assets/sobremi/firmaMia.png"
 import type { Item } from "../../interfaces/inicio/inicio";
 
 export const inicioItems: Item[] = [

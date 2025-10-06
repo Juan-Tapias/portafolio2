@@ -1,9 +1,10 @@
-import proyectoHtml from '../../assets/proyecto_html.png'
-import examenHtml from '../../assets/exame_html.png'
-import ecma from '../../assets/ecam.png'
-import proyectoJavaScript from '../../assets/proyecto_java_script.png'
-import flashCard from '../../assets/flash_card.png'
-import veterinaria from '../../assets/veterinaria.png'
+import proyectoHtml from '../../assets/proyectos/proyecto_html.png'
+import examenHtml from '../../assets/proyectos/exame_html.png'
+import ecma from '../../assets/proyectos/ecam.png'
+import proyectoJavaScript from '../../assets/proyectos/proyecto_java_script.png'
+import flashCard from '../../assets/proyectos/flash_card.png'
+import veterinaria from '../../assets/proyectos/veterinaria.png'
+
 export const projects = [
     { 
         image: proyectoHtml, 

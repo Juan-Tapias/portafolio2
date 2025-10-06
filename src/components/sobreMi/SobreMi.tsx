@@ -1,8 +1,8 @@
 import ParticlesBackground from "../particulas/Particulas";
 import Slider from '../slider/Slider'
-import foto2 from '../../assets/foto1.jpeg'
-import foto3 from '../../assets/foto2.jpeg'
-import foto4 from '../../assets/foto3.jpeg'
+import foto2 from '../../assets/sobremi/foto1.jpeg'
+import foto3 from '../../assets/sobremi/foto2.jpeg'
+import foto4 from '../../assets/sobremi/foto3.jpeg'
 
 import { SobreMiData } from "../../data/sobreMi/SobreMiItem";
 
