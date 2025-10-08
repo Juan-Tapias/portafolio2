@@ -5,7 +5,7 @@ import { habilidadesBlandasData } from "../../data/habilidades/HabilidadesData";
 const Habilidades = (): JSX.Element => {
   return (
     <section>
-      <h1 className="text-white text-5xl font-bold mt-10 text-center [text-shadow:4px_4px_7px_rgba(207,207,207,0.3)]">Habilidades Técnicas</h1>
+      <h1 className="text-white text-5xl font-bold mb-10 text-center [text-shadow:4px_4px_7px_rgba(207,207,207,0.3)]">Habilidades Técnicas</h1>
       <div className="flex flex-row flex-wrap gap-10 justify-center">
         {habilidadesData.map((item, index) => {
           return (
@@ -16,7 +16,10 @@ const Habilidades = (): JSX.Element => {
           );
         })}
       </div>
-      <h1 className="text-white text-5xl font-bold mt-10 text-center [text-shadow:4px_4px_7px_rgba(207,207,207,0.3)]">Habilidades Blandas</h1>
+      <br /><br />
+      <br /><br />
+      <br /><br />
+      <h1 className="text-white text-5xl font-bold mb-10 text-center [text-shadow:4px_4px_7px_rgba(207,207,207,0.3)]">Habilidades Blandas</h1>
       <div className="flex flex-row flex-wrap gap-10 justify-center">
         {habilidadesBlandasData.map((item,index) => {
           const Icon = item.icon

@@ -23,8 +23,8 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
 
   return (
     <div className="flex justify-center h-screen items-center flex-col drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]">
-      <h2 className="text-5xl text-white [text-shadow:4px_4px_5px_rgba(207,207,207,0.6)] mb-4">Proyectos</h2>
-      <div className={`${styles.sliderContainer2} rounded-3xl relative w-[950px] h-[550px] bg-gray-900 mt-10`}>  
+      <h2 className="text-5xl text-white [text-shadow:4px_4px_5px_rgba(207,207,207,0.6)] mt-4">Proyectos</h2>
+      <div className={`${styles.sliderContainer2} rounded-3xl relative w-[900px] h-[525px] bg-gray-900 mt-10`}>  
         <Swiper
           modules={[Navigation, EffectFade]}
           onSwiper={(swiper) => (mainSwiperRef.current = swiper)}
