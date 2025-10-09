@@ -18,7 +18,7 @@ export const Contacto = (): JSX.Element => {
                                 rel="noopener noreferrer"
                                 className="text-3xl text-gray-300 hover:scale-110 transition-transform hover:text-white"
                             >
-                                <Icon className="text-5xl text-white hover:text-blue-500 transition-transform hover:scale-110"/>
+                                <Icon className="text-5xl text-white transition-transform hover:scale-110"/>
                             </a>
                             <p>{item.title}</p>
                         </div>
