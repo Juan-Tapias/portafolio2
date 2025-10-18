@@ -1,4 +1,5 @@
 import firma from "../../assets/sobremi/firmaMia.png"
+import { FaGithub } from "react-icons/fa";
 import type { Item } from "../../interfaces/inicio/inicio";
 
 export const inicioItems: Item[] = [
@@ -24,7 +25,14 @@ export const inicioItems: Item[] = [
     type: "img",
     content: "https://img.freepik.com/fotos-premium/gato-negro-gafas-sol-gato-negro-gafas-sol_732812-1122.jpg",
     className:
-      "flex flex-col w-87 h-95 rounded-full shadow-lg transition-transform duration-500 hover:scale-105 drop-shadow-[0_0_30px_rgba(255,255,255,0.3)]",
+    "flex flex-col w-87 h-95 rounded-full shadow-lg transition-transform duration-500 hover:scale-105 drop-shadow-[0_0_30px_rgba(255,255,255,0.3)]",
     col: "right",
+  },
+  {
+    Icon: FaGithub,
+    type: "icono",
+    link: "https://github.com/Juan-Tapias",
+    className: "text-5xl text-white transition-transform hover:scale-110",
+    col: "left",
   }
 ];

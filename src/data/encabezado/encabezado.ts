@@ -1,4 +1,5 @@
-import { FaUser, FaProjectDiagram, FaCode, FaHandshake, FaEnvelope } from "react-icons/fa";
+import { FaUser, FaProjectDiagram, FaCode, FaHandshake } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import type {HeaderItem}  from "../../interfaces/encabezado/Encabezado";
 
 export const headerItems: HeaderItem[] = [
@@ -6,5 +7,5 @@ export const headerItems: HeaderItem[] = [
   { icon: FaProjectDiagram },
   { icon: FaCode },
   { icon: FaHandshake },
-  { icon: FaEnvelope },
+  {icon: FaLinkedin, link:'https://www.linkedin.com/in/juanmartinezt/' }
 ];

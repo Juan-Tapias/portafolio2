@@ -3,6 +3,7 @@ import { inicioItems} from "../../data/inicio/InicioItems";
 import type {Item } from "../../interfaces/inicio/inicio"
 import VantaBackground from "../birds/Birds";
 import DescargarPDFBoton from "../boton/Boton";
+import { div } from "three/tsl";
 
 const Inicio = (): JSX.Element => {
   return (
@@ -11,16 +12,17 @@ const Inicio = (): JSX.Element => {
         <VantaBackground />
       </div>
       <div className="grid grid-cols-2 min-h-screen text-white px-10 relative z-10">
-        <div className="flex flex-col space-y-10 text-center mt-45">
+        <div className="flex flex-col space-y-7 text-center mt-35">
           {inicioItems
             .filter((item) => item.col === "left")
             .map((item: Item, index: number) => {
+              const Icon = item.Icon
               if (item.type === "h1") {
                 return (
                   <h1
                     key={index}
                     className={item.className}
-                    dangerouslySetInnerHTML={{ __html: item.content }}
+                    dangerouslySetInnerHTML={{ __html: item.content || "" }}
                   />
                 );
               }
@@ -40,7 +42,19 @@ const Inicio = (): JSX.Element => {
                     className={item.className}
                   />
                 );
+              }              if (item.type === "icono") {
+                const Icon = item.Icon;
+                if (Icon) {
+                  return (
+                    <Icon
+                      key={index} 
+                      className={item.className}
+                    />
+                  );
+                }
+                return null;
               }
+              return null;
             })}
         </div>
 

@@ -39,13 +39,20 @@ const Header = (): JSX.Element => {
                     transition-all duration-500 ease-in-out
                     ${visible ? "translate-y-0 opacity-100" : "-translate-y-40 opacity-0"}`}
       >
-        {headerItems.map(({ icon: Icon }: HeaderItem, index: number) => (
+        {headerItems.map(({ icon: Icon, link }: HeaderItem, index: number) => (
+          <a
+              key={index}
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+          >
           <Icon
             key={index}
             className="w-8 h-8 transition-transform duration-300 
                        hover:scale-110 hover:-translate-y-2 
                        hover:drop-shadow-[0_0_7px_purple] cursor-pointer"
           />
+          </a>
         ))}
       </div>
     </div>

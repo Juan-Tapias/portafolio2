@@ -13,7 +13,7 @@ export const SobreMiData: ItemSobremi[] = [
   },
   {
     type: "p",
-    content: "Soy Juan Sebastian Martinez Tapias. Algunos me conocen por mi nombre, otros por mis proyectos. Trabajo con React, Java y Python, construyendo ideas que pasen de un boceto a un producto real. Cuando no estoy frente a la pantalla, probablemente estoy con una raqueta de ping pong en la mano.",
+    content: "Soy Juan Sebastian Martinez Tapias. Trabajo con React, Java y Python, construyendo ideas que pasen de un boceto a un producto real. Cuando no estoy frente a la pantalla, probablemente estoy con una raqueta de ping pong en la mano.",
     className: "text-white"
   },
   {
