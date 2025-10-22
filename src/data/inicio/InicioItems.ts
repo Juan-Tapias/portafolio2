@@ -18,7 +18,7 @@ export const inicioItems: Item[] = [
   {
     type: "img",
     content: firma,
-    className: "w-100 h-60 ml-35 mt-[-2.5vw] drop-shadow-[0_0_4px_rgba(255,255,255,1)]",
+    className:"w-70 h-50 ml-20 sm:ml-50 mt-[-2.5vw] drop-shadow-[0_0_4px_rgba(255,255,255,1)]",
     col: "left",
   },
   {
@@ -33,6 +33,14 @@ export const inicioItems: Item[] = [
     type: "icono",
     link: "https://github.com/Juan-Tapias",
     className: "text-5xl text-white transition-transform hover:scale-110",
-    col: "left",
-  }
+    col: "icono",
+  },
+    {
+    Icon: FaGithub,
+    type: "icono",
+    link: "https://github.com/Juan-Tapias",
+    className: "text-5xl text-white transition-transform hover:scale-110",
+    col: "icono",
+  },
+
 ];

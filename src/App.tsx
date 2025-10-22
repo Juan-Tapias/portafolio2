@@ -11,21 +11,9 @@ function App() {
     <>
       <Header />
       <Inicio />
-      <br /><br />
-      <br /><br />
-      <br /><br />
       <SobreMi/>
-      <br /><br />
-      <br /><br />
-      <br /><br />
       <Habilidades/>
-      <br /><br />
-      <br /><br />
-      <br /><br />
       <ProyectosSection/>
-      <br /><br />
-      <br /><br />
-      <br /><br />
       <Contacto/>
     </>
   )

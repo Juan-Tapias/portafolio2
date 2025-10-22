@@ -1,21 +1,65 @@
 
-.sliderContainer2 :global(.swiper-wrapper) {
-  background-color: transparent !important;
+@media (max-width: 768px) {
+  .sliderContainer2 {
+    width: 96vw !important;
+    height: 350px !important;
+    margin: 0 auto !important;
+    border-radius: 1.5rem !important;
+    background: linear-gradient(135deg, #18181b 60%, #000000 100%);
+    transition: box-shadow 0.4s, background 0.6s;
+  }
+  .sliderContainer2 :global(.swiper-button-prev),
+  .sliderContainer2 :global(.swiper-button-next) {
+    background: #18181b !important;
+    border-radius: 1.3rem !important;
+    box-shadow: 0 2px 8px #fff3 !important;
+    font-size: 1.7rem;
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+  .sliderContainer2 :global(.swiper-pagination-bullet) {
+    opacity: 0.85 !important;
+    border-radius: 50% !important;
+    box-shadow: 0 1px 4px #fbbf2455 !important;
+  }
+  .sliderContainer2 :global(.swiper-pagination-bullet-active) {
+    background: #000000 !important;
+    opacity: 1 !important;
+  }
+  .sliderContainer2 :global(.swiper-slide) div.absolute {
+    left: 8px !important;
+    bottom: 10px !important;
+    padding: 10px 16px !important;
+    font-size: 1rem !important;
+    background: linear-gradient(90deg, #18181b 90%, #000000 100%) !important;
+    box-shadow: 0 2px 12px #0008 !important;
+    max-width: 89vw !important;
+    border-radius: 1rem !important;
+  }
+  /* Miniaturas scroll horizontal si no caben */
+  .sliderContainer2 .flex.absolute {
+    max-width: 96vw !important;
+    overflow-x: auto !important;
+    left: 10px !important;
+    right: auto !important;
+    bottom: 6px !important;
+  }
 }
 
-.sliderContainer2 :global(.swiper-slide) {
-  background-color: transparent !important;
+/* Tablet: intermedio */
+@media (min-width:769px) and (max-width:1023px) {
+  .sliderContainer2 {
+    width: 78vw !important;
+    height: 420px !important;
+    margin: 0 auto !important;
+  }
 }
 
-.sliderContainer2 :global(.swiper-button-prev),
-.sliderContainer2 :global(.swiper-button-next) {
-  color: #000000 !important;
-}
-
-.sliderContainer2 :global(.swiper-pagination-bullet) {
-  background: #000 !important; 
-}
-
-.sliderContainer2 :global(.swiper-pagination-bullet-active) {
-  background: #000000 !important;
+/* Desktop grande, mantiene original */
+@media (min-width:1024px) {
+  .sliderContainer2 {
+    width: 900px !important;
+    height: 525px !important;
+    margin: 0 auto !important;
+  }
 }

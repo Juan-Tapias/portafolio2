@@ -1,5 +1,5 @@
 export type ItemType = "h1" | "h2" | "img";
-export type ColType = "left" | "right";
+export type ColType = "left" | "right" | "icono";
 
 export interface Item {
   Icon?: React.ElementType;

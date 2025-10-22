@@ -16,7 +16,7 @@ const Slider: React.FC<SliderProps> = ({ imagenes }) => {
   const swiperRef = useRef<SwiperCore | null>(null);
 
   return (
-    <div className={`${styles.sliderContainer} w-lg max-w-5xl mt-2 aspect-[16/9]`}>
+    <div className={`${styles.sliderContainer} w-full max-w-2xl md:max-w-5xl mx-auto mt-2 aspect-[16/9]`}>
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         modules={[Autoplay, Pagination, Navigation, EffectFade]}
@@ -27,14 +27,15 @@ const Slider: React.FC<SliderProps> = ({ imagenes }) => {
         pagination={{ clickable: true }}
         navigation
         effect="fade"
-        className="rounded-xl overflow-hidden shadow-2xl bg-transparent"
+        className="rounded-xl overflow-hidden shadow-2xl bg-transparent w-full h-full"
       >
         {imagenes.map((img, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index} className="w-full h-full">
             <img
               src={img}
               alt={`slide-${index}`}
-              className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+              className="w-full h-full object-cover"
+              style={{ minHeight: 180 }}
             />
           </SwiperSlide>
         ))}
@@ -42,6 +43,7 @@ const Slider: React.FC<SliderProps> = ({ imagenes }) => {
     </div>
   );
 };
+
 
 
 export default Slider;
