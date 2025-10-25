@@ -1,69 +1,71 @@
-# React + TypeScript + Vite
+# Portafolio Personal y Profesional - Juan Martínez
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido al repositorio de mi portafolio personal y profesional. Este proyecto reúne una selección de mis trabajos, habilidades y experiencia en desarrollo web moderno, haciendo énfasis en mi dominio de **React**, **TypeScript** y **Tailwind CSS**.
 
-Currently, two official plugins are available:
+## 🚀 Demo en Línea
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Accede y explora el portafolio aquí:  
+[juan-martinez-portafolio.netlify.app](https://juan-martinez-portafolio.netlify.app/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tecnologías Principales
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React**: Biblioteca principal para la construcción de interfaces de usuario basadas en componentes reutilizables.
+- **TypeScript**: Superset de JavaScript, añadiendo tipado estático para mayor robustez y mantenibilidad del código.
+- **Tailwind CSS**: Framework de utilidades para estilos rápidos, responsivos y personalizables, priorizando el diseño limpio y la eficiencia en el desarrollo.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Características Destacadas
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Interfaz moderna y responsiva** construida con componentes reutilizables.
+- **Tipado seguro** y patrones de desarrollo sólidos usando TypeScript.
+- **Estilos optimizados** y personalización total con Tailwind CSS.
+- Navegación fluida e interacción intuitiva.
+- Adaptación a dispositivos móviles y pantallas grandes sin perder calidad visual.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Cómo usar este portafolio
+
+Si deseas ejecutar el proyecto localmente:
+
+### Clona el repositorio
+
+    git clone https://github.com/Juan-Tapias/portafolio2
+
+### 2. Accede al directorio del proyecto
+
+    cd portafolio2
+
+### 3. Instala las dependencias
+
+    npm install
+
+### 4. Inicia el servidor de desarrollo
+
+    npm run dev
+
+## Estructura del Proyecto
+
+- `/src/components/`: Componentes reutilizables de React.
+- `/src/pages/`: Páginas principales del portafolio (Home, About, Projects, Contacto).
+- `/src/styles/`: Configuración personalizada de Tailwind CSS y otros estilos.
+- `/public/`: Recursos estáticos, imágenes y assets.
+
+---
+
+## Créditos
+
+Este portafolio está creado y mantenido por **Juan Martínez**.  
+
+---
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT. Siéntete libre de revisarlo, aprender y reutilizar componentes bajo los términos de la licencia.
+
+---
+
+¡Explora el código, revisa mis proyectos y descubre cómo puedo aportar valor como colaborador esencial en cualquier equipo de desarrollo!
