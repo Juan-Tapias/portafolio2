@@ -78,7 +78,7 @@ const Inicio = (): JSX.Element => {
                     key={index}
                     src={item.content}
                     alt="Imagen portada"
-                    className={`${item.className} w-56 sm:w-60 md:w-64 mx-auto mt-7`}
+                    className={`${item.className} `}
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.4 + index * 0.2, duration: 0.5 }}

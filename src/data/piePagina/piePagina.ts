@@ -22,12 +22,12 @@ export const FooterData: FooterDataType = {
   social: [
     {
       name: "GitHub",
-      link: "https://github.com/tuusuario",
+      link: "https://github.com/Juan-Tapias",
       Icon: FaGithub,
     },
     {
       name: "LinkedIn",
-      link: "https://linkedin.com/in/tuusuario",
+      link: "https://www.linkedin.com/in/juanmartinezt",
       Icon: FaLinkedin,
     },
   ],
