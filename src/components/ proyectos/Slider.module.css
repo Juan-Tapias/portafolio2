@@ -1,3 +1,38 @@
+.sliderContainer :global(.swiper) {
+  background-color: transparent !important;
+  width: 30vw;
+  height: 325px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.sliderContainer :global(.swiper-wrapper) {
+  background-color: transparent !important;
+}
+
+.sliderContainer :global(.swiper-slide) {
+  background-color: transparent !important;
+}
+
+:global(.swiper-button-prev),
+:global(.swiper-button-next) {
+  color: #000 !important;
+}
+
+:global(.swiper-button-prev) svg,
+:global(.swiper-button-next) svg {
+  fill: #000 !important;
+}
+
+
+.sliderContainer :global(.swiper-pagination-bullet) {
+  background: #000 !important; 
+}
+
+.sliderContainer :global(.swiper-pagination-bullet-active) {
+  background: #000000 !important;
+}
 
 @media (max-width: 768px) {
   .sliderContainer2 {
@@ -36,7 +71,7 @@
     max-width: 89vw !important;
     border-radius: 1rem !important;
   }
-  /* Miniaturas scroll horizontal si no caben */
+
   .sliderContainer2 .flex.absolute {
     max-width: 96vw !important;
     overflow-x: auto !important;
@@ -46,7 +81,6 @@
   }
 }
 
-/* Tablet: intermedio */
 @media (min-width:769px) and (max-width:1023px) {
   .sliderContainer2 {
     width: 78vw !important;
@@ -55,7 +89,6 @@
   }
 }
 
-/* Desktop grande, mantiene original */
 @media (min-width:1024px) {
   .sliderContainer2 {
     width: 900px !important;
