@@ -1,5 +1,5 @@
 import firma from "../../assets/sobremi/firmaMia.png"
-import fotomia from "../../../public/foto.png"
+import fotomia from "../../../public/foto.jpeg"
 import type { Item } from "../../interfaces/inicio/inicio";
 
 export const inicioItems: Item[] = [
