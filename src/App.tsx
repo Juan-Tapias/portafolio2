@@ -9,7 +9,7 @@ import { Footer } from "./components/piePagina/piePagina"
 function App() {
 
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Header />
       <Inicio />
       <SobreMi/>
@@ -17,7 +17,7 @@ function App() {
       <ProyectosSection/>
       <Contacto/>
       <Footer/>
-    </>
+    </div>
   )
 }
 

@@ -1,11 +1,11 @@
 import type { JSX } from "react";
 import { inicioItems } from "../../data/inicio/InicioItems";
 import type { Item } from "../../interfaces/inicio/inicio";
-import VantaBackground from "../birds/Birds";
 import DescargarPDFBoton from "../boton/Boton";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import VantaBackground from "../birds/Birds";
 
 const Inicio = (): JSX.Element => {
   const controlsLeft = useAnimation();
@@ -31,12 +31,12 @@ const Inicio = (): JSX.Element => {
   }, [controlsRight, inViewRight]);
 
   return (
-    <div className="relative w-full min-h-screen">
+    <div id="inicio" className="relative w-full min-h-screen overflow-hidden">
       <div className="absolute inset-0 -z-10">
         <VantaBackground />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen text-white px-3 md:px-20 relative z-10 gap-y-20 md:gap-y-0 gap-x-0 md:gap-x-12">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 min-h-screen text-white px-6 md:px-12 relative z-10 gap-y-20 md:gap-y-0 gap-x-0 md:gap-x-12">
         <motion.div
           ref={refLeft}
           animate={controlsLeft}
@@ -55,7 +55,7 @@ const Inicio = (): JSX.Element => {
                     dangerouslySetInnerHTML={{ __html: item.content || "" }}
                     initial={{ opacity: 0, y: 15 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.2 + index * 0.2, duration: 0.5 }}
+                    transition={{ delay: 0.2, duration: 0.5 }}
                   />
                 );
               }
@@ -66,7 +66,7 @@ const Inicio = (): JSX.Element => {
                     className={`${item.className} `}
                     initial={{ opacity: 0, y: 15 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.3 + index * 0.2, duration: 0.5 }}
+                    transition={{ delay: 0.3, duration: 0.5 }}
                   >
                     {item.content}
                   </motion.h2>
@@ -81,7 +81,7 @@ const Inicio = (): JSX.Element => {
                     className={`${item.className} `}
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: 0.4 + index * 0.2, duration: 0.5 }}
+                    transition={{ delay: 0.4, duration: 0.5 }}
                   />
                 );
               }

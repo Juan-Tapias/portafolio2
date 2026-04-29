@@ -22,7 +22,7 @@ const SobreMiSection = () => {
   }, [inViewTitle, controlsTitle]);
 
   return (
-    <section className="relative w-full min-h-screen px-2 md:px-0 pb-8">
+    <section id="sobreMi" className="relative w-full min-h-screen px-2 md:px-0 pb-8">
       
       <motion.h1
         ref={refTitle}
@@ -63,7 +63,7 @@ const AnimarSliderYTexto = ({ imagenes }: { imagenes: string[] }) => {
       <div className="w-full md:w-auto flex justify-center mb-6 md:mb-0">
         <Slider imagenes={imagenes} />
       </div>
-      <div className="text-white w-full max-w-xl md:w-[40vw] h-auto md:h-[22vw] flex flex-col items-center justify-center text-center bg-[#1118279f] rounded-xl hover:bg-[#111827] transition-transform duration-300 ease-in-out hover:scale-105 hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.5)] p-5 md:p-0">
+      <div className="text-white w-full max-w-xl md:max-w-2xl md:w-[40vw] h-auto md:min-h-[300px] flex flex-col items-center justify-center text-center bg-[#1118279f] rounded-xl hover:bg-[#111827] transition-transform duration-300 ease-in-out hover:scale-105 hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.5)] p-5 md:p-8">
         {SobreMiData.slice(1, 3).map((item, index) => {
           if (item.type === "h2") return <h2 key={index} className={"text-xl sm:text-2xl md:text-3xl mt-4 mb-2 " + item.className}>{item.content}</h2>;
           if (item.type === "p") return <p key={index} className={"text-sm sm:text-base md:text-lg " + item.className}>{item.content}</p>;
@@ -105,7 +105,7 @@ const AnimarTresBloques = () => {
   }, [controlsArray, refs]);
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center md:justify-evenly gap-6 md:gap-0 w-full max-w-6xl mx-auto mt-6">
+    <div className="flex flex-col md:flex-row items-center justify-center md:justify-evenly gap-8 md:gap-4 w-full max-w-7xl mx-auto mt-6 px-4">
       {[3, 5, 7].map((startIndex, i) => (
         <motion.div
           key={i}
@@ -113,9 +113,9 @@ const AnimarTresBloques = () => {
           animate={controlsArray[i]}
           initial={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.7, delay: i * 0.2, ease: "easeOut" }}
-          className="text-white rounded-xl h-auto md:h-[32vh] w-full max-w-xs md:w-[14vw] mt-2 md:mt-5 flex flex-col items-center justify-center 
+          className="text-white rounded-xl h-auto md:min-h-[250px] w-full max-w-xs md:w-64 mt-2 md:mt-5 flex flex-col items-center justify-center 
           text-center bg-[#10052596] hover:bg-[#100525] transition-transform duration-300 ease-in-out hover:scale-105 hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.5)] 
-          p-5 md:p-0 mb-6 md:mb-0"
+          p-6 mb-6 md:mb-0"
         >
           <h2 className={"text-lg sm:text-xl md:text-2xl mb-2 " + SobreMiData[startIndex].className}>{SobreMiData[startIndex].content}</h2>
           <p className="mt-2 text-sm sm:text-base md:text-lg">{SobreMiData[startIndex + 1].content}</p>

@@ -1,4 +1,4 @@
-import pdf from '../../../public/Hoja De Vida.pdf'
+const pdf = "/Hoja De Vida.pdf";
 
 
 function DescargarPDFBoton(){

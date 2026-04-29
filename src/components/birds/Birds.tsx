@@ -8,13 +8,16 @@ const VantaBirds: React.FC = () => {
 
   useEffect(() => {
     if (!vantaEffect && vantaRef.current) {
+      // Vanta expects THREE to be globally available or passed correctly
+      (window as any).THREE = THREE;
+      
       setVantaEffect(
         BIRDS({
             el: vantaRef.current,
             THREE: THREE,
             backgroundColor: 0x0a0a0a, 
-            color1: 0x6a0dad,           
-            color2: 0x6a0dad,    
+            color1: 0xffffff,           
+            color2: 0xffffff,    
             wingSpan: 5.0,
             speedLimit: 5.0,
             separation: 50.0,

@@ -37,28 +37,31 @@ const Header = (): JSX.Element => {
   return (
     <div className="flex items-center justify-center pointer-events-none">
       <div
-        className={`pointer-events-auto z-50 fixed top-8 flex items-center justify-around space-x-4 p-3 rounded-full bg-gray-500 
-                      w-3xs opacity-50 scale-90 shadow-[0_0_20px_rgba(186,85,211,1)] 
-                      hover:opacity-100 hover:scale-100 hover:bg-gray-100 hover:w-md
+        className={`pointer-events-auto z-50 fixed top-6 md:top-8 flex items-center justify-around space-x-2 md:space-x-4 p-2 md:p-3 rounded-full bg-gray-600/50 backdrop-blur-md 
+                      w-[70%] max-w-xs md:w-3xs opacity-90 scale-95 shadow-[0_0_20px_rgba(186,85,211,0.5)] 
+                      hover:opacity-100 hover:scale-100 hover:bg-gray-700/80 hover:w-[90%] md:hover:w-md
                       transition-all duration-500 ease-in-out
                       ${visible ? "translate-y-0 opacity-100" : "-translate-y-40 opacity-0"}`}
         aria-label="[translate:Barra de navegación de iconos sociales]"
       >
-        {headerItems.map(({ icon: Icon, link }: HeaderItem, index: number) => (
-          <a
-            key={index}
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`Link a ${link}`}
-          >
+        {headerItems.map(({ icon: Icon, link }: HeaderItem, index: number) => {
+          const isExternal = link?.startsWith("http");
+          return (
+            <a
+              key={index}
+              href={link}
+              target={isExternal ? "_blank" : undefined}
+              rel={isExternal ? "noopener noreferrer" : undefined}
+              aria-label={`Link a ${link}`}
+            >
             <Icon
-              className="w-8 h-8 transition-transform duration-300 
-                         hover:scale-110 hover:-translate-y-2 
+              className="w-6 h-6 md:w-8 md:h-8 transition-transform duration-300 
+                         hover:scale-110 hover:-translate-y-1 
                          hover:drop-shadow-[0_0_7px_purple] cursor-pointer"
             />
-          </a>
-        ))}
+            </a>
+          );
+        })}
       </div>
     </div>
   );

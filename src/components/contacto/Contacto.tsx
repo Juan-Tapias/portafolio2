@@ -17,7 +17,7 @@ export const Contacto = (): JSX.Element => {
   }, [controls, inView]);
 
   return (
-    <section className="relative py-12">
+    <section id="contacto" className="relative py-12">
       <h1 className="text-white text-5xl font-bold mb-12 text-center [text-shadow:4px_4px_7px_rgba(207,207,207,0.3)]">
         Contacto
       </h1>

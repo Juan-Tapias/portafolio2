@@ -1,6 +1,6 @@
 export interface HabilidadesInterfaz {
     image?: string
-    icon?: React.ElementType
+    icon?: any
     title: string
     descripcion?: string
     classname?: string

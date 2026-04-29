@@ -10,6 +10,7 @@ export const ProyectosSection = (): JSX.Element => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="max-w-screen-xl mx-auto px-4 sm:px-8 md:px-16 py-20"
+      id="proyectos"
       aria-label="Sección de proyectos"
     >
       <ProjectCarousel projects={projects} />
